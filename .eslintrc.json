@@ -1,3 +1,93 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "unused-imports",
+    "simple-import-sort",
+    "import",
+    "jsx-expressions"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+
+  "rules": {
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "@next/next/no-img-element": "off",
+    "import/no-unresolved": "warn",
+    "import/no-absolute-path": "warn",
+    "jsx-expressions/strict-logical-expressions": "error",
+
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "FC": true,
+          "React.FC": true
+        },
+        "extendDefaults": true
+      }
+    ],
+
+    // 未使用の変数がある場合エラーにする（デフォルトは warning）
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+
+    // unused-imports/no-unused-varsと競合するためoff
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "off",
+
+    // 変数宣言と return 周辺を改行必須に
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    },
+    {
+      "files": ["src/libs/reactQuery.ts", "pages/_app.tsx"],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ]
 }

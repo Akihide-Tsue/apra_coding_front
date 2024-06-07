@@ -1,0 +1,37 @@
+{
+  // 保存時にprettierによって整形
+  "editor.formatOnSave": true,
+  // デフォルトのフォーマッターに prettierを指定
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // importの自動整形
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // 保存時に自動整形
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.fixAll.eslint",
+    "source.fixAll.organizeImports"
+  ],
+  // 保存時に行の終端に存在する空白文字を削除
+  "editor.dragAndDrop": false,
+  // 保存時にファイルの最後に存在する空行を削除
+  "files.insertFinalNewline": false,
+  // 空白文字を削除
+  "diffEditor.ignoreTrimWhitespace": false,
+  // tabのスペース数指定
+  "editor.tabSize": 2,
+  // セミコロンは除去
+  "typescript.format.semicolons": "remove",
+
+  "cSpell.customDictionaries": {
+    "words": {
+      "name": "words",
+      "path": "${workspaceRoot}/.cspell/words.txt",
+      "description": "Words used in this project",
+      "addWords": true
+    },
+    "custom": true,
+    "internal-terms": false
+  }
+}
