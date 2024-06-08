@@ -2,11 +2,11 @@
   // 保存時にprettierによって整形
   "editor.formatOnSave": true,
   // デフォルトのフォーマッターに prettierを指定
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // importの自動整形
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // // importの自動整形
+  // "typescript.preferences.importModuleSpecifier": "non-relative",
   // 保存時に自動整形
   "editor.codeActionsOnSave": [
     "source.addMissingImports",
@@ -22,16 +22,5 @@
   // tabのスペース数指定
   "editor.tabSize": 2,
   // セミコロンは除去
-  "typescript.format.semicolons": "remove",
-
-  "cSpell.customDictionaries": {
-    "words": {
-      "name": "words",
-      "path": "${workspaceRoot}/.cspell/words.txt",
-      "description": "Words used in this project",
-      "addWords": true
-    },
-    "custom": true,
-    "internal-terms": false
-  }
+  "typescript.format.semicolons": "remove"
 }

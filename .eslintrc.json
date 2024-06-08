@@ -21,7 +21,9 @@
 
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
   },
 
@@ -84,7 +86,7 @@
       }
     },
     {
-      "files": ["src/libs/reactQuery.ts", "pages/_app.tsx"],
+      "files": ["pages/_app.tsx"],
       "rules": {
         "no-restricted-imports": "off"
       }
