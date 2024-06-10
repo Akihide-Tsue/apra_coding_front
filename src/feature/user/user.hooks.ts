@@ -6,7 +6,7 @@ export const useUserList = () => {
   const { data, isLoading } = useQueryWrapper<User[], Error>({
     queryKey: ["userListKey"],
     queryFn: () => getUsersList(),
-    refetchInterval: 10000, // 10秒ごとに再フェッチ
+    refetchInterval: 8000, // 8秒ごとに再フェッチ
   })
 
   return {
@@ -19,7 +19,7 @@ export const useProfile = () => {
   const { data, isLoading } = useQueryWrapper<User, Error>({
     queryKey: ["profileKey"],
     queryFn: () => getProfile(),
-    refetchInterval: 10000, // 10秒ごとに再フェッチ
+    refetchInterval: 8000, // 8秒ごとに再フェッチ
   })
 
   return {
