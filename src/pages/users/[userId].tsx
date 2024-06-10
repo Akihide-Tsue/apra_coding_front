@@ -6,7 +6,7 @@ export default function User() {
 
   return (
     <div style={{ minHeight: "100vh", padding: "40px" }}>
-      <div>{router.query.userId}です</div>
+      <p>{router.query.userId}です</p>
 
       <Link href="/">
         <button
