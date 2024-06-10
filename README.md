@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ## 課題内容
 
-xxxを参照し、APIから取得したデータを使用して同じUIを実装して下さい。  
+[サンプル](https://apra-coding-front-git-feature-demo-atsueapracojps-projects.vercel.app/)を参照し、モックのAPIから取得したデータを使用して同じUIを実装して下さい。  
 cssはおおまかな目測で問題ありません。
 
 ## チェックポイント
@@ -35,5 +35,7 @@ cssはおおまかな目測で問題ありません。
 
 ## 補足
 
-1.xxxxで取得したidと一致するデータを一番上に表示して下さい。
-2.idはフェッチごとに変わります。3.手を加えるファイルは`/src/pages/index.tsx`だけで大丈夫です。
+1.取得したuserListの中にprofileのidと一致するデータが含まれる場合は1番目に表示して下さい。  
+2.合計で6つのリンクを表示して下さい。遷移先はサンプルに従って下さい。  
+3.idはフェッチごとに変わります。定期的にrefetchしています。  
+4.手を加えるファイルは`/src/pages/index.tsx`だけで大丈夫です。
