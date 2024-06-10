@@ -8,7 +8,7 @@ export default function Home() {
   console.log("profile", profile)
 
   return (
-    <div style={{ minHeight: "100vh", padding: "40px" }}>
+    <div style={{ padding: "40px" }}>
       <div>ここに追記して下さい 🚀</div>
     </div>
   )
