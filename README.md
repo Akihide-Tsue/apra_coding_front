@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ## 課題内容
 
-[サンプル](https://apra-coding-front-git-feature-demo-atsueapracojps-projects.vercel.app/)を参照し、モックのAPIから取得したデータを使用して同じUIを実装して下さい。  
+[サンプル](https://apra-coding-front-7r2u-git-master-atsueapracojps-projects.vercel.app/)を参照し、モックのAPIから取得したデータを使用して同じUIを実装して下さい。  
 cssはおおまかな目測で問題ありません。
 
 ## チェックポイント
