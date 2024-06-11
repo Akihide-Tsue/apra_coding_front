@@ -44,7 +44,7 @@ export default function Home() {
                 padding: "0 8px",
               }}
             >
-              {user.displayName}
+              {`${user.displayName}さん`}
             </a>
           )
         })}
