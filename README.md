@@ -26,16 +26,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 ## 課題内容
 
 [サンプル](https://apra-coding-front-7r2u-git-master-atsueapracojps-projects.vercel.app/)を参照し、モックのAPIから取得したデータを使用して同じUIを実装して下さい。  
-cssはおおまかな目測で問題ありません。
+
+修正対象のファイルはこちらです。
+`src/pages/index.tsx`
+
+・マージン・パディングの数値は問いません。8~24pxなど現実的な数値を設定してください。
+・背景色は白、枠線は黒、テキストカラーも黒で設定してください。
+※CSSはおおまかな目測で問題ありません。
+
 
 ## チェックポイント
 
-1.UIが正しい順番で表示できているか  
-2.クリック時の遷移を正しく実装できているか
+1.一覧表示できているか
+2.一覧の各アイテムが正しい順番で表示できているか  
+3.クリック時の遷移を正しく実装できているか
 
 ## 補足
 
+1.モックのAPIはuserListとprofileの２種類が使用されています。それぞれ、userListはユーザー一覧、profileは自身のユーザー情報を取得します。
 1.取得したuserListの中にprofileのidと一致するデータが含まれる場合は1番目に表示して下さい。  
-2.合計で6つのリンクを表示して下さい。遷移先はサンプルに従って下さい。  
-3.idはフェッチごとに変わります。定期的にrefetchしています。  
-4.手を加えるファイルは`/src/pages/index.tsx`だけで大丈夫です。
+2.一覧に合計で6つのアイテムを表示して下さい。遷移先は[サンプル](https://apra-coding-front-7r2u-git-master-atsueapracojps-projects.vercel.app/)に従って下さい。  
+3.idは取得したデータごとに変わります。定期的にデータの再取得が行われています。
