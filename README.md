@@ -27,11 +27,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 [サンプル](https://apra-coding-front-7r2u-git-master-atsueapracojps-projects.vercel.app/)を参照し、モックのAPIから取得したデータを使用して同じUIを実装して下さい。  
 
-修正対象のファイルはこちらです。
+修正対象のファイルはこちらです。  
 `src/pages/index.tsx`
 
 - マージン・パディングの数値は問いません。8~24pxなど現実的な数値を設定してください。
-- 背景色は白、枠線は黒、テキストカラーも黒で設定してください。
+- 背景色は白、枠線は黒、テキストカラーも黒で設定してください。  
+
 ※CSSはおおまかな目測で問題ありません。
 
 
@@ -39,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 1. 一覧表示できているか
 2. 一覧の各アイテムが正しい順番で表示できているか  
-3.クリック時の遷移を正しく実装できているか
+3. クリック時の遷移を正しく実装できているか
 
 ## 補足
 
