@@ -21,7 +21,7 @@ yarn dev
 npm install -g yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+ローカル環境 [http://localhost:3000](http://localhost:3000) を立ち上げる。
 
 ## 課題内容
 
