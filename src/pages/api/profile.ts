@@ -1,11 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from "next"
+import { NextApiRequest, NextApiResponse } from "next"
 
-import { User } from "@/feature/user/type"
-import { mockData } from "@/mock"
-
-export default function handler(_: NextApiRequest, res: NextApiResponse<User>) {
-  const randomIndex = Math.floor(Math.random() * mockData.length)
-  const user = mockData[randomIndex]
-
-  return res.status(200).json(user)
+export default function handler(_: NextApiRequest, res: NextApiResponse) {
+  return res.status(200).json({
+    id: "93f5e529-ce45-481b-9d77-ed5ed009cc8f",
+    displayName: "自分の名前",
+  })
 }

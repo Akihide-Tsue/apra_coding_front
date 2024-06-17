@@ -15,15 +15,14 @@ export const useUserList = () => {
   }
 }
 
-export const useProfile = () => {
+export const useMyProfile = () => {
   const { data, isLoading } = useQueryWrapper<User, Error>({
     queryKey: ["profileKey"],
     queryFn: () => getProfile(),
-    refetchInterval: 8000, // 8秒ごとに再フェッチ
   })
 
   return {
     isLoading,
-    profile: data,
+    myProfile: data,
   }
 }
